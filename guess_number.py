@@ -18,8 +18,10 @@ while count < guesses:
     if guess == number:
         print(f'Congrats! You entered the right number')
         break
+    elif guess < number:
+        print(f'Sorry! The number I am thinking of is higher. Try again.')
     else:
-        print(f'Sorry! Thats not the correct number. Retry!')
+        print(f'Sorry! The number I am thinking of is lower. Try again.')
 
 if count == guesses:
     print(f'You have used up all your attempts.')
